@@ -562,6 +562,11 @@ video {
   position: fixed;
 }
 
+.tw-my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .tw-mt-4 {
   margin-top: 1rem;
 }
@@ -570,16 +575,36 @@ video {
   margin-bottom: 2rem;
 }
 
-.tw-ml-2 {
-  margin-left: 0.5rem;
-}
-
-.tw-ml-3 {
-  margin-left: 0.75rem;
-}
-
 .tw-ml-4 {
   margin-left: 1rem;
+}
+
+.tw-mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.tw-mb-4 {
+  margin-bottom: 1rem;
+}
+
+.tw-mb-7 {
+  margin-bottom: 1.75rem;
+}
+
+.tw-mt-5 {
+  margin-top: 1.25rem;
+}
+
+.tw-mt-6 {
+  margin-top: 1.5rem;
+}
+
+.tw-mt-20 {
+  margin-top: 5rem;
+}
+
+.tw-mt-10 {
+  margin-top: 2.5rem;
 }
 
 .tw-flex {
@@ -594,12 +619,44 @@ video {
   width: 100%;
 }
 
+.tw-w-4\/5 {
+  width: 80%;
+}
+
 .tw-w-2\/4 {
   width: 50%;
 }
 
+.tw-cursor-pointer {
+  cursor: pointer;
+}
+
+.tw-flex-row {
+  flex-direction: row;
+}
+
+.tw-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.tw-flex-col {
+  flex-direction: column;
+}
+
+.tw-items-end {
+  align-items: flex-end;
+}
+
 .tw-items-center {
   align-items: center;
+}
+
+.tw-justify-end {
+  justify-content: flex-end;
+}
+
+.tw-justify-center {
+  justify-content: center;
 }
 
 .tw-justify-between {
@@ -620,6 +677,11 @@ video {
   background-color: rgb(174 142 232 / var(--tw-bg-opacity));
 }
 
+.tw-bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .tw-object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -633,9 +695,33 @@ video {
   padding: 0.75rem;
 }
 
+.tw-p-6 {
+  padding: 1.5rem;
+}
+
+.tw-p-10 {
+  padding: 2.5rem;
+}
+
+.tw-p-20 {
+  padding: 5rem;
+}
+
+.tw-p-12 {
+  padding: 3rem;
+}
+
 .tw-px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.tw-text-center {
+  text-align: center;
+}
+
+.tw-text-end {
+  text-align: end;
 }
 
 .tw-text-6xl {
@@ -643,34 +729,27 @@ video {
   line-height: 1;
 }
 
-.tw-text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.tw-text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.tw-text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.tw-text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .tw-text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
+.tw-text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .tw-text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+h1, a{
+  font-family: 'Urbanist', sans-serif;
+}
+
+p{
+  font-family: 'Arvo', serif;
 }
 
 .hover\:tw-bg-white:hover {
@@ -682,4 +761,3 @@ video {
   --tw-text-opacity: 1;
   color: rgb(33 33 33 / var(--tw-text-opacity));
 }
-

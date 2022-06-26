@@ -12,7 +12,10 @@ export default function Banner() {
         <p className="tw-text-white tw-mt-4 tw-mb-8">
           Um bom site faz toda a diferença...
         </p>
-        <a className="tw-bg-purple  tw-p-2 tw-text-white transition ease-in-out hover:tw-bg-white hover:tw-text-darkGray">
+        <a
+          className="tw-bg-purple tw-cursor-pointer tw-p-2 tw-text-white transition ease-in-out hover:tw-bg-white hover:tw-text-darkGray"
+          href="#contact"
+        >
           FAÇA UM ORÇAMENTO
         </a>
       </div>
