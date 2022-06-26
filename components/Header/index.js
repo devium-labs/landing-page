@@ -9,16 +9,16 @@ export default function Header() {
             <h1 className="tw-text-white tw-text-3xl">Devium</h1>
           </div>
           <div className="tw-flex">
-            <a className="tw-text-white tw-ml-4" href="#about">
+            <a className="tw-text-white tw-ml-4" href="/#about">
               Sobre
             </a>
-            <a className="tw-text-white tw-ml-4" href="#works">
+            <a className="tw-text-white tw-ml-4" href="/#works">
               Serviços
             </a>
-            <a className="tw-text-white tw-ml-4" href="#jobs">
+            <a className="tw-text-white tw-ml-4" href="/#jobs">
               Portifólio
             </a>
-            <a className="tw-text-white tw-ml-4" href="#contact">
+            <a className="tw-text-white tw-ml-4" href="/#contact">
               Contato
             </a>
           </div>

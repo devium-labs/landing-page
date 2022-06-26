@@ -567,6 +567,11 @@ video {
   margin-bottom: 5rem;
 }
 
+.tw-my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .tw-mt-4 {
   margin-top: 1rem;
 }
@@ -575,16 +580,20 @@ video {
   margin-bottom: 2rem;
 }
 
-.tw-ml-4 {
-  margin-left: 1rem;
-}
-
-.tw-mb-3 {
-  margin-bottom: 0.75rem;
+.tw-mt-20 {
+  margin-top: 5rem;
 }
 
 .tw-mb-4 {
   margin-bottom: 1rem;
+}
+
+.tw-mr-3 {
+  margin-right: 0.75rem;
+}
+
+.tw-ml-4 {
+  margin-left: 1rem;
 }
 
 .tw-mb-7 {
@@ -599,16 +608,16 @@ video {
   margin-top: 1.5rem;
 }
 
-.tw-mt-20 {
-  margin-top: 5rem;
-}
-
 .tw-mt-10 {
   margin-top: 2.5rem;
 }
 
 .tw-flex {
   display: flex;
+}
+
+.tw-h-40 {
+  height: 10rem;
 }
 
 .tw-h-auto {
@@ -627,6 +636,10 @@ video {
   width: 50%;
 }
 
+.tw-w-3\/5 {
+  width: 60%;
+}
+
 .tw-cursor-pointer {
   cursor: pointer;
 }
@@ -643,16 +656,16 @@ video {
   flex-direction: column;
 }
 
+.tw-items-start {
+  align-items: flex-start;
+}
+
 .tw-items-end {
   align-items: flex-end;
 }
 
 .tw-items-center {
   align-items: center;
-}
-
-.tw-justify-end {
-  justify-content: flex-end;
 }
 
 .tw-justify-center {
@@ -677,6 +690,10 @@ video {
   background-color: rgb(174 142 232 / var(--tw-bg-opacity));
 }
 
+.tw-bg-transparent {
+  background-color: transparent;
+}
+
 .tw-bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -693,18 +710,6 @@ video {
 
 .tw-p-3 {
   padding: 0.75rem;
-}
-
-.tw-p-6 {
-  padding: 1.5rem;
-}
-
-.tw-p-10 {
-  padding: 2.5rem;
-}
-
-.tw-p-20 {
-  padding: 5rem;
 }
 
 .tw-p-12 {
@@ -744,12 +749,39 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 h1, a{
   font-family: 'Urbanist', sans-serif;
 }
 
 p{
   font-family: 'Arvo', serif;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 10px;
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input:checked {
+  background-color: #fff;
+  padding: 1px;
+  box-sizing: border-box;
+  border: 6px solid #AE8EE8;
+}
+
+section {
+  scroll-margin-top: 100px;
 }
 
 .hover\:tw-bg-white:hover {
@@ -761,3 +793,4 @@ p{
   --tw-text-opacity: 1;
   color: rgb(33 33 33 / var(--tw-text-opacity));
 }
+

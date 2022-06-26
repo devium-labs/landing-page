@@ -39,7 +39,7 @@ export default function Jobs() {
   ];
 
   return (
-    <section className="tw-w-full">
+    <section className="tw-w-full" id="jobs">
       <div className="tw-text-white tw-w-full tw-text-center">
         <h1 className="tw-text-6xl tw-mb-7">Nossos últimos projetos</h1>
       </div>
