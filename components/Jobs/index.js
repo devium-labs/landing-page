@@ -61,6 +61,7 @@ export default function Jobs() {
               <a
                 href={job.link}
                 target="_blank"
+                rel="noreferrer"
                 className="tw-bg-purple tw-p-2 hover:tw-bg-white hover:tw-text-darkGray tw-mt-6"
               >
                 SAIBA MAIS

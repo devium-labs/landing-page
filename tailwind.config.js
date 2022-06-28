@@ -4,13 +4,15 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      white: "#fff",
+      white: "#f8f8f8",
       transparent: "transparent",
       purple: "#AE8EE8",
       darkGray: "#212121",
     },
     fontFamily: {
-      lustria: ["Lustria"],
+      trap: ["Trap"],
+      arvo: ["Arvo"],
+      bantayog: ["Bantayog"],
     },
   },
   plugins: [

@@ -65,7 +65,7 @@ export default function Contact() {
       </p>
       <form onSubmit={handleSubmit(onSubmit)} className="tw-w-full tw-p-3">
         <div className="tw-flex tw-flex-col tw-items-start tw-mb-4">
-          <label for="name">Nome:</label>
+          <label htmlFor="name">Nome:</label>
           <input
             type="text"
             name="nome"
@@ -74,7 +74,7 @@ export default function Contact() {
           />
         </div>
         <div className="tw-flex tw-flex-col tw-items-start tw-mb-4">
-          <label for="email">Email:</label>
+          <label htmlFor="email">Email:</label>
           <input
             type="email"
             name="email"
@@ -89,7 +89,7 @@ export default function Contact() {
             value="Orçamento"
             {...register("type", { required: true })}
           />
-          <label for="type" className="tw-mr-3">
+          <label htmlFor="type" className="tw-mr-3">
             Orçamento
           </label>
           <input
@@ -98,10 +98,10 @@ export default function Contact() {
             value="Dúvida"
             {...register("type", { required: true })}
           />
-          <label for="type">Dúvida</label>
+          <label htmlFor="type">Dúvida</label>
         </div>
         <div className="tw-flex tw-flex-col tw-items-start tw-mb-4">
-          <label for="message">Mensagem:</label>
+          <label htmlFor="message">Mensagem:</label>
           <textarea
             name="message"
             {...register("message", { required: true })}

@@ -13,11 +13,12 @@ function MyApp({ Component, pageProps }) {
           content="Desenvolvimento web, sites, aplicativos, software, software house, webservices"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
           href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Urbanist:wght@100;300;400;500;600;700&display=swap"
           rel="stylesheet"
         ></link>
+        <link rel="icon" href="/devium-black.svg" />
 
         <meta property="og:image" content="/screenshot.png" />
       </Head>

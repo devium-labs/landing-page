@@ -2,8 +2,40 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Arvo';
+  background: #212121;
+}
+
+@font-face {
+  font-family: 'Trap';
+  src: url('../public/fonts/trap/trap-black-webfont.woff2') format('woff2'),
+       url('../public/fonts/trap/trap-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bantayog';
+  src: url('../public/fonts/bantayog/bantayog-regular-webfont.woff2') format('woff2'),
+       url('../public/fonts/bantayog/bantayog-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bantayog';
+  src: url('../public/fonts/bantayog/bantayog-semilight-webfont.woff2') format('woff2'),
+       url('../public/fonts/bantayog/bantayog-semilight-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bantayog';
+  src: url('../public/fonts/bantayog/bantayog-light-webfont.woff2') format('woff2'),
+       url('../public/fonts/bantayog/bantayog-light-webfont.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
 }
 
 a {
@@ -14,3 +46,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h1,h2,h3 {
+  font-family: Bantayog;
+}
+
+

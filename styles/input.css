@@ -6,11 +6,7 @@ html{
   scroll-behavior: smooth;
 }
 
-h1, a{
-    font-family: 'Urbanist', sans-serif;
-}
-
-p{
+p {
     font-family: 'Arvo', serif;
 }
 
@@ -39,4 +35,13 @@ input[type="radio"] {
   section {
     scroll-margin-top: 100px;
   }
+
+@layer components {
+  .nav-link {
+    @apply tw-text-white tw-px-[10px] tw-mx-[10px] tw-font-arvo tw-text-[18px] md:hover:tw-border-b-[3px] md:hover:tw-border-white tw-ease-in tw-duration-100 tw-h-[30px];
+  }
+  .button {
+    @apply tw-bg-purple tw-cursor-pointer tw-font-bantayog tw-px-[25px] tw-py-[12px] tw-text-white tw-ease-out tw-duration-100 hover:tw-bg-darkGray hover:tw-outline hover:tw-outline-white;
+  }
+}
 
