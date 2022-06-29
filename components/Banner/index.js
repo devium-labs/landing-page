@@ -4,7 +4,7 @@ export default function Banner() {
   return (
     <section className="tw-w-full tw-flex tw-flex-col lg:tw-flex-row tw-justify-between tw-items-center tw-max-w-[1920px] xl:tw-h-screen xl:tw-max-h-[1080px] tw-pt-[70px]">
       <div className="tw-py-[50px] lg:tw-py-0 tw-px-[20px] lg:tw-px-20 lg:tw-w-[40%]">
-        <h1 className="tw-text-[42px] sm:tw-text-6xl tw-text-white tw-leading-[90%]">
+        <h1 className="title">
           Explore <br/>novas ideias <br/>para seu negócio!
         </h1>
         <p className="tw-text-white tw-mt-[10px] tw-mb-8">

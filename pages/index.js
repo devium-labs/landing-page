@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import Banner from "../components/Banner";
+import Services from "../components/Services";
 import About from "../components/About";
 import Jobs from "../components/Jobs";
 import Contact from "../components/Contact";
@@ -17,6 +18,7 @@ export default function Home() {
       <Layout>
         <Banner />
         <About />
+        <Services />
         <Jobs />
         <Contact />
       </Layout>

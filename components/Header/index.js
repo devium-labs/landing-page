@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="tw-w-full tw-border-b-[3px] tw-border-white tw-h-[70px] tw-flex tw-justify-center tw-items-center tw-bg-darkGray tw-px-[20px] tw-fixed">
+      <header className="tw-w-full tw-border-b-[3px] tw-border-white tw-h-[70px] tw-flex tw-justify-center tw-items-center tw-bg-darkGray tw-px-[20px] tw-fixed tw-z-[100]">
         <nav className="tw-w-full tw-max-w-[1920px] tw-mx-auto tw-flex tw-justify-between tw-items-center">
           <div>
             <h1 className="tw-text-white tw-text-[32px] sm:tw-text-[42px] tw-font-trap">Devium</h1>

@@ -28,11 +28,12 @@ export default function Contact() {
       },
     });
 
-  const onSubmit = async ({ email, name, type, message }) => {
+  const onSubmit = async ({ email, name, tel,type, message }) => {
     const body = `
     <h3>Novo interessado DEVIUM</h3>
     <p>Nome: ${name}</p>  
     <p>Email: ${email}</p>  
+    <p>Telefone: ${tel}</p>  
     <p>Interesse: ${type}</p>  
     <p>Mensagem: ${message}</p>                   
   `;
@@ -54,11 +55,11 @@ export default function Contact() {
 
   return (
     <section
-      className="tw-w-3/5 tw-text-white tw-flex tw-flex-col tw-items-center tw-mt-20"
+      className="tw-w-full tw-max-w-[540px] tw-text-white tw-flex tw-flex-col tw-items-center tw-mt-[250px] tw-mb-[50px]"
       id="contact"
     >
-      <h1 className="tw-text-6xl">Contato</h1>
-      <p className="tw-text-center tw-my-6 ">
+      <h1 className="title">Contato</h1>
+      <p className="tw-my-6 tw-mx-[20px]">
         Tem alguma dúvida ou quer fazer um orçamento? Preencha o formulário
         abaixo nos contando um pouco do que tem em mente que entraremos em
         contato.
@@ -70,7 +71,7 @@ export default function Contact() {
             type="text"
             name="nome"
             {...register("name", { required: true })}
-            className="tw-bg-transparent tw-border-2 tw-p-2 tw-w-full"
+            className="tw-bg-transparent tw-border-2 tw-p-2 tw-w-full tw-outline-0"
           />
         </div>
         <div className="tw-flex tw-flex-col tw-items-start tw-mb-4">
@@ -79,10 +80,20 @@ export default function Contact() {
             type="email"
             name="email"
             {...register("email", { required: true })}
-            className="tw-bg-transparent tw-border-2 tw-p-2 tw-w-full"
+            className="tw-bg-transparent tw-border-2 tw-p-2 tw-w-full tw-outline-0"
           />
         </div>
-        <div className="tw-flex tw-items-center tw-mb-4">
+        <div className="tw-flex tw-flex-col tw-items-start tw-mb-4">
+          <label htmlFor="email">Telefone:</label>
+          <input
+            type="tel"
+            name="tel"
+            {...register("tel", { required: true })}
+            className="tw-bg-transparent tw-border-2 tw-p-2 tw-w-full tw-outline-0"
+          />
+        </div>
+        <div className="tw-flex tw-items-center tw-mb-4 tw-flex-wrap">
+          <div className="tw-flex tw-items-center tw-justify-center tw-my-[5px]">
           <input
             type="radio"
             name="type"
@@ -92,6 +103,8 @@ export default function Contact() {
           <label htmlFor="type" className="tw-mr-3">
             Orçamento
           </label>
+          </div>
+          <div className="tw-flex tw-items-center tw-justify-center tw-my-[5px]">
           <input
             type="radio"
             name="type"
@@ -99,17 +112,18 @@ export default function Contact() {
             {...register("type", { required: true })}
           />
           <label htmlFor="type">Dúvida</label>
+          </div>
         </div>
         <div className="tw-flex tw-flex-col tw-items-start tw-mb-4">
           <label htmlFor="message">Mensagem:</label>
           <textarea
             name="message"
             {...register("message", { required: true })}
-            className="tw-bg-transparent tw-border-2 tw-p-2 tw-w-full tw-h-40"
+            className="tw-bg-transparent tw-border-2 tw-p-2 tw-w-full tw-h-40 tw-outline-0"
           ></textarea>
         </div>
         <div className="tw-w-full tw-text-center">
-          <button type="submit">ENVIAR MENSAGEM</button>
+          <button className="button tw-w-full" type="submit">ENVIAR</button>
         </div>
       </form>
       <div>

@@ -36,7 +36,21 @@ input[type="radio"] {
     scroll-margin-top: 100px;
   }
 
+  @keyframes services {
+    from {
+      margin-top: 0;
+      opacity: 100%;
+    }
+    to {
+      margin-top: -100px;
+      opacity: 0;
+    }
+  }
+
 @layer components {
+  .title {
+    @apply tw-text-[42px] sm:tw-text-6xl tw-text-white tw-leading-[90%];
+  }
   .nav-link {
     @apply tw-text-white tw-px-[10px] tw-mx-[10px] tw-font-arvo tw-text-[18px] md:hover:tw-border-b-[3px] md:hover:tw-border-white tw-ease-in tw-duration-100 tw-h-[30px];
   }

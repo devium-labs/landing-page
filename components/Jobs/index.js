@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react";
 export default function Jobs() {
   const [numJobs, setNumJobs] = useState(2);
 
-  function handleMoreJobs() {
+  function handleMoreJobs(e) {
+    if (numJobs + 2 >= jobs.length) e.target.classList.add("tw-hidden")
     setNumJobs(numJobs + 2);
   }
 
@@ -39,42 +40,48 @@ export default function Jobs() {
   ];
 
   return (
-    <section className="tw-w-full" id="jobs">
+    <section className="tw-w-full tw-max-w-[1920px] tw-mx-auto" id="jobs">
       <div className="tw-text-white tw-w-full tw-text-center">
-        <h1 className="tw-text-6xl tw-mb-7">Nossos últimos projetos</h1>
+        <h1 className="title">Nossos últimos projetos</h1>
       </div>
-      {jobs
-        .filter((item, index) => index < numJobs)
-        .map((job, i) => (
-          <div
-            className={`tw-text-white tw-w-full tw-flex tw-items-center tw-justify-between ${
-              i % 2 == 0 ? "tw-flex-row" : "tw-flex-row-reverse"
-            }`}
-            key={i}
-          >
-            <div className={`tw-w-2/4 `}>
-              <img src={job.imagem} className="tw-w-full tw-object-cover" />
+      <div className="tw-py-[50px]">
+        {jobs
+          .filter((item, index) => index < numJobs)
+          .map((job, i) => (
+            <div
+              className={`tw-text-white tw-w-full tw-flex tw-items-center tw-justify-between tw-flex-col-reverse ${
+                i % 2 == 0 ? "md:tw-flex-row" : "md:tw-flex-row-reverse"
+              }`}
+              key={i}
+            >
+              <div className={`md:tw-w-2/4`}>
+                <img src={job.imagem} className="tw-w-full tw-object-cover" />
+              </div>
+              <div className="md:tw-w-2/4 tw-text-white tw-px-[20px] tw-py-[50px] tw-flex tw-items-center tw-justify-center">
+                <div className="tw-flex tw-flex-col tw-items-end tw-max-w-[400px] tw-w-full">
+                <h1 className={`tw-w-full tw-text-4xl tw-text-start`}>{job.titulo}</h1>
+                <p className="tw-text-start tw-mt-5">{job.descricao}</p>
+                <div className="tw-w-full tw-h-full tw-flex tw-pt-[20px]">
+                <a
+                  href={job.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="tw-text-[#7bcaec] tw-border-b-[3px] tw-border-[#7bcaec]"
+                >
+                  Saiba mais
+                </a>
+                </div>
+                </div>
+              </div>
             </div>
-            <div className="tw-text-white tw-w-2/4 tw-p-12 tw-flex tw-flex-col tw-items-end">
-              <h1 className="tw-text-4xl tw-text-end">{job.titulo}</h1>
-              <p className="tw-text-end tw-mt-5">{job.descricao}</p>
-              <a
-                href={job.link}
-                target="_blank"
-                rel="noreferrer"
-                className="tw-bg-purple tw-p-2 hover:tw-bg-white hover:tw-text-darkGray tw-mt-6"
-              >
-                SAIBA MAIS
-              </a>
-            </div>
-          </div>
-        ))}
+          ))}
+      </div>
       <div className="tw-w-full tw-flex tw-justify-center tw-mt-10">
         <button
-          onClick={(e) => handleMoreJobs()}
-          className="tw-text-white tw-bg-purple tw-p-2 hover:tw-bg-white hover:tw-text-darkGray"
+          onClick={(e) => handleMoreJobs(e)}
+          className="tw-cursor-pointer tw-font-bantayog tw-px-[10px] tw-text-white tw-ease-out tw-duration-100 tw-border-b-[3px] hover:tw-border-b-0 tw-h-[30px]"
         >
-          Carregar mais trabalhos
+          CARREGAR MAIS
         </button>
       </div>
     </section>
