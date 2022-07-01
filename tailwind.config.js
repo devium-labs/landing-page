@@ -8,6 +8,7 @@ module.exports = {
       transparent: "transparent",
       purple: "#AE8EE8",
       darkGray: "#212121",
+      red: "#cc0000",
     },
     fontFamily: {
       trap: ["Trap"],

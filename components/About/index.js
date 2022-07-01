@@ -12,19 +12,10 @@ export default function About() {
         <p>
           Somos uma empresa nova no mercado, criada com o intuito de prestar
           soluções em tecnologia. Nossos serviços consistem principalmente no
-          desenvolvimento e ajustes de sites. Qualquer dúvida entre me contato.
+          desenvolvimento e ajustes de sites
         </p>
         <p>
-          Somos uma empresa nova no mercado, criada com o intuito de prestar
-          soluções em tecnologia. Nossos serviços consistem principalmente no
-          desenvolvimento e ajustes de sites. Qualquer dúvida entre me contato,
-          criada com o intuito de prestar soluções em tecnologia. Nossos
-          serviços consistem principalmente no desenvolvimento e ajustes de
-          sites. Qualquer dúvida entre me contato.
-        </p>
-        <p>
-          Somos uma empresa nova no mercado, criada com o intuito de prestar
-          soluções em tecnologia. Nossos serviços consistem.
+          Temos muito amor pela criação de sites e muito orgulho do que fazemos. Toda a estrutura é pensada de forma a obter o melhor resultado. Cada parte do processo é executada com muita atenção e cuidado, para evitar o maior número de erros possível e criar o melhor produto final.
         </p>
       </div>
     </section>

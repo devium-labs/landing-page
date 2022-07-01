@@ -1,13 +1,13 @@
 
 export default function Services() {
   const services = [
-    {image: '/services-web.png', title: 'Desenvolvimento web', text: 'Um site funcional e de boa qualidade é a nossa prioridade. Criamos sites de excelente qualidade para sua empresa.'},
+    {image: '/services-web.png', title: 'Desenvolvimento web', text: 'Um site funcional e com bom desempenho é a nossa prioridade. Criamos projetos de excelente qualidade para sua empresa.'},
     {image: '/services-design.png', title: 'Design ux/ui', text: 'Design de layouts bonitos, que irão chamar a atenção de seus clientes.'},
     {image: '/services-painel.png', title: 'Painel backend', text: 'Integrando com o painel backend, o site se torna facilmente editável para você personalizar da forma que achar melhor.'},
-    {image: '/services-ajustes.png', title: 'Ajustes de site', text: 'Já tem um site mas precisa precisa resolver um erro ou adionar uma funcionalidade? É com a gente mesmo.'},
+    {image: '/services-ajustes.png', title: 'Ajustes de site', text: 'Já tem um site mas precisa resolver um erro ou adionar uma funcionalidade? É com a gente mesmo.'},
   ]
   return (
-    <section className="tw-py-[75px]">
+    <section id="works" className="tw-py-[75px]">
       <h1 className="title tw-text-center tw-pb-[30px]">Nossos serviços</h1>
 
       <div className="tw-flex tw-items-center tw-justify-center tw-flex-wrap">

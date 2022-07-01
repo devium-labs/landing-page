@@ -8,34 +8,36 @@ export default function Jobs() {
     setNumJobs(numJobs + 2);
   }
 
+  useEffect(() => {
+    if (numJobs >= jobs.length) {
+      let button = document.getElementById("load-more-button");
+      button.classList.add("tw-hidden")
+    }
+  }, [])
+
   const jobs = [
-    // {
-    //   titulo: "TopWay",
-    //   descricao:
-    //     "Neste projeto para a empresa Topway, que vende peças para caminhões, buscamos deixar o site o mais limpo e intuitivo possível, com a temáticas das cores da logo.",
-    //   imagem: "/topway.svg",
-    //   link: "topway.com",
-    // },
-    // {
-    //   titulo: "Chacará Berté",
-    //   descricao:
-    //     "O projeto para a chácara, pensado com um estilo mais casual, para a divulgação de eventos e festas.",
-    //   imagem: "/chacara.svg",
-    //   link: "chacara.com",
-    // },
     {
       titulo: "Ibrás",
       descricao:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nibh justo, malesuada sit amet ultrices quis, faucibus in metus. Praesent tempor eros tellus, in iaculis dolor iaculis quis. ",
+        "Site inteiramente criado visando a experiência do usuário e o desempenho. Um projeto grande incluindo muitas páginas e funcionalidades.",
       imagem: "/ibras.png",
-      link: "ibras.com",
+      link: "https://ibras.com",
     },
     {
       titulo: "App Smartraining",
+      // descricao:
+      //   "Projeto desenvolvido como freelance, onde foi feito a adição de novas funcionalidades ao aplicativo existente, abrangendo os conhecimentos no desenvolvimento mobile.",
       descricao:
-        "Projeto desenvolvido como freelance, onde foi feito a adição de novas funcionalidades ao aplicativo existente, abrangendo os conhecimentos no desenvolvimento mobile.",
+        "Nesse projeto adicionamos novas funcionalidades ao aplicativo já existente App Smartraining. O aplicativo existe tanto para celular como para desktop.",
       imagem: "/app.png",
-      link: "smartraining.com",
+      link: "https://app.smartraining.com.br/",
+    },
+    {
+      titulo: "Ema Jr",
+      descricao:
+        "Projeto criado para empresa júnior de engenharia de materiais da UEPG.",
+      imagem: "/emajr.png",
+      link: "https://emajunior.com/",
     },
   ];
 
@@ -78,7 +80,7 @@ export default function Jobs() {
             </div>
           ))}
       </div>
-      <div className="tw-w-full tw-flex tw-justify-center tw-mt-10">
+      <div id="load-more-button" className="tw-w-full tw-flex tw-justify-center tw-mt-10">
         <button
           onClick={(e) => handleMoreJobs(e)}
           className="tw-cursor-pointer tw-font-bantayog tw-px-[10px] tw-text-white tw-ease-out tw-duration-100 tw-border-b-[3px] hover:tw-border-b-0 tw-h-[30px]"
