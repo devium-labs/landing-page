@@ -49,6 +49,10 @@ export default function Contact() {
       async function sendMessage() {
         const res = await axios.post('https://deviumlabs.com.br/api/mail', {
           body
+        }, {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          }
         });
         console.log(res.data)
       }
