@@ -1,4 +1,5 @@
 import React from "react";
+import axios from 'axios'
 import toast, { Toaster } from "react-hot-toast";
 
 import { useForm } from "react-hook-form";
@@ -30,23 +31,26 @@ export default function Contact() {
 
   const onSubmit = async ({ email, name, tel,type, message }) => {
     const body = `
-    <h3>Novo interessado DEVIUM</h3>
-    <p>Nome: ${name}</p>  
-    <p>Email: ${email}</p>  
-    <p>Telefone: ${tel}</p>  
-    <p>Interesse: ${type}</p>  
-    <p>Mensagem: ${message}</p>                   
+      <h3>Novo interessado DEVIUM</h3>
+      <p>Nome: ${name}</p>  
+      <p>Email: ${email}</p>  
+      <p>Telefone: ${tel}</p>  
+      <p>Interesse: ${type}</p>  
+      <p>Mensagem: ${message}</p>                   
   `;
 
     try {
       toast.promise(sendMessage(), {
         loading: "Enviando...",
         success: <b>Mensagem enviada!</b>,
-        error: <b>Infelizmente, não conseguimos enviar a mensagem.</b>,
+        error: <b>Ocorreu um erro. Tente novamente mais tarde!</b>,
       });
 
       async function sendMessage() {
-        console.log(body);
+        const res = await axios.post('https://deviumlabs.com.br/api/mail', {
+          body
+        });
+        console.log(res.data)
       }
     } catch (e) {
       console.log(e);
@@ -103,6 +107,7 @@ export default function Contact() {
         <div className="tw-flex tw-items-center tw-mb-4 tw-flex-wrap">
           <div className="tw-flex tw-items-center tw-justify-center tw-my-[5px]">
           <input
+            tabIndex={-1}
             type="radio"
             name="type"
             value="Orçamento"
@@ -115,6 +120,7 @@ export default function Contact() {
           </div>
           <div className="tw-flex tw-items-center tw-justify-center tw-my-[5px]">
           <input
+            tabIndex={-1}
             type="radio"
             name="type"
             value="Dúvida"
