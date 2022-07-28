@@ -47,11 +47,11 @@ export default function Contact() {
       });
 
       async function sendMessage() {
-        const res = await axios.post('https://deviumlabs.com.br/api/mail', {
+        const res = await axios.post('https://www.deviumlabs.com.br/api/mail', {
           body
         }, {
           headers: {
-            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Origin": "https://www.deviumlabs.com.br",
           }
         });
         console.log(res.data)
